@@ -67,16 +67,18 @@
 
         /* Contenedores de contenido (PDF y Video) */
         .pdf-container, .video-container {
+             width: 100%;
             margin-top: 15px;
-            width: 100%;
-            border: 1px solid #ddd;
             border-radius: 8px;
             overflow: hidden;
-            background-color: #000; /* Fondo oscuro para el reproductor */
+            background-color: #000; /* Fondo negro para que el video luzca mejor */
         }
 
-        .pdf-container {
+        iframe {
+            width: 100%;
             height: 500px;
+            border: none;
+
         }
 
         footer {
@@ -107,11 +109,11 @@
     </header>
 
     <main>
+         <h4>Contenidos de la página WEB</h4>
         <!-- Ficha 1: Vista previa de PDF -->
         <div class="semana">
             <h3>Tarea: Investigación de Conceptos</h3>
             <p>A continuación se presenta el documento PDF con los detalles de la unidad:</p>
-            
             <div class="pdf-container">
                 <iframe src="rescursos/Introducción Arduino (1).pdf"></iframe>
             </div>
