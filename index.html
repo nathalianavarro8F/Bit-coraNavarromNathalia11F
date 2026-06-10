@@ -66,8 +66,9 @@
         }
 
         /* Contenedores de contenido (PDF y Video) */
+          /* ESTILOS PARA MULTIMEDIA (PDF Y VIDEO) */
         .pdf-container, .video-container {
-             width: 100%;
+            width: 100%;
             margin-top: 15px;
             border-radius: 8px;
             overflow: hidden;
@@ -78,27 +79,35 @@
             width: 100%;
             height: 500px;
             border: none;
-
         }
 
+        video {
+            width: 100%; /* El video se ajusta al ancho de la tarjeta */
+            height: auto;
+            display: block;
+        }
+
+        /* FOOTER Y ZOOM */
         footer {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 15px 50px;
-            border-top: 1px solid rgb(186, 9, 189);
-            background-color: rgb(145, 9, 143);
-            color: white;
+            padding: 15px 30px;
+            border-top: 1px solid burlywood;
+            background-color: rgb(66, 157, 243);
         }
 
-        /* Zoom en el logo */
         footer img {
             transition: transform 0.3s ease;
-            cursor: pointer;
         }
 
         footer img:hover {
-            transform: scale(1.15);
+            transform: scale(1.2);
+        }
+
+        samp {
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
