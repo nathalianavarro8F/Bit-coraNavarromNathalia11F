@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitácora Mauricio Gaitán</title>
+    <style>
+        /* ESTILOS BASE */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color: #f5f7fa;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        /* TÍTULO NEÓN */
+        header {
+            padding: 20px;
+            background-color: paleturquoise;
+        }
+
+        header h1 {
+            color: #333;
+            text-shadow: 0 0 5px #bc13fe, 0 0 10px #bc13fe, 0 0 20px #bc13fe;
+        }
+
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* TARJETAS .SEMANA */
+        .semana {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-left: 6px solid #bc13fe;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .semana h3 {
+            margin-top: 0;
+            color: #bc13fe;
+        }
+
+        /* ESTILOS PARA MULTIMEDIA (PDF Y VIDEO) */
+        .pdf-container, .video-container {
+            width: 100%;
+            margin-top: 15px;
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #000; /* Fondo negro para que el video luzca mejor */
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        video {
+            width: 100%; /* El video se ajusta al ancho de la tarjeta */
+            height: auto;
+            display: block;
+        }
+
+        /* FOOTER Y ZOOM */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            border-top: 1px solid burlywood;
+            background-color: rgb(66, 157, 243);
+        }
+
+        footer img {
+            transition: transform 0.3s ease;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+
+        samp {
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bitácora segunda y tercera unidad</h1>
+    </header>
+
+    <main>
+        <h4>Contenidos de la página WEB</h4>
+
+        <!-- FICHA 1 CON PDF -->
+        <div class="semana">
+            <h3>Semana 1: Documentación de Proyecto</h3>
+            <p>Vista previa del documento PDF:</p>
+            <div class="pdf-container">
+                <!-- Reemplaza "mi_archivo.pdf" por el nombre de tu archivo -->
+                <iframe src="recursos/IntroducciónArduino.pdf"></iframe>
+            </div>
+        </div>
+
+        <!-- FICHA 2 CON VIDEO MP4 -->
+        <div class="semana">
+            <h3>Semana 2: Presentación de Avances</h3>
+            <p>Mira el video explicativo de esta semana:</p>
+            <div class="video-container">
+                <!-- Reemplaza "mi_video.mp4" por el nombre de tu archivo de video -->
+                <video controls>
+                    <source src="recursos/Grabación 2026-05-13 132945.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <samp>@mau__gaitan</samp>
+        <img src="https://www.capouilliez.edu.gt/assets/img/logo.png" height="50" alt="Logo Colegio">
+    </footer>
+    
+</body>
+</html>
